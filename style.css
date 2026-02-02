@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.boards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.player-board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 5px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.2s;
+}
+
+.cell:hover {
+  transform: scale(1.1);
+  background-color: #ccc;
+}
+
+.cell.bomb {
+  background-color: red;
+  color: white;
+}
+
+.cell.hit {
+  background-color: orange;
+  color: white;
+}
+
+.cell.safe {
+  background-color: green;
+  color: white;
+}
+
+.hearts p {
+  font-size: 18px;
+}
