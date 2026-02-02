@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>משחק פצצות דו-שחקני</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="script.js"></script>
+</head>
+<body>
+<h1>משחק פצצות דו-שחקני</h1>
+
+<div class="menu">
+  <button id="createGameBtn">פתח משחק</button>
+  <input type="text" id="codeInput" placeholder="הכנס קוד">
+  <button id="joinGameBtn">הצטרף למשחק</button>
+</div>
+
+<div id="gameContainer" style="display:none;">
+  <h2>קוד משחק: <span id="gameCodeDisplay"></span></h2>
+  
+  <div class="boards">
+    <div>
+      <h3>הלוח שלך</h3>
+      <div class="player-board" id="myBoard"></div>
+    </div>
+    <div>
+      <h3>לוח היריב</h3>
+      <div class="player-board" id="opponentBoard"></div>
+    </div>
+  </div>
+
+  <div class="hearts">
+    <p>לבבות שלך: <span id="myHearts">3</span></p>
+    <p>לבבות יריב: <span id="opponentHearts">3</span></p>
+  </div>
+</div>
+</body>
+</html>
